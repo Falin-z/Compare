@@ -1,0 +1,107 @@
+.container{
+  height: 1200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.Bar{
+  display: flex;
+  flex-direction: row;
+  margin: 15rpx 10rpx 15rpx 10rpx;
+  align-items: center;
+  font-size: 30rpx;
+}
+.Red{
+  color: red;
+  margin: 10rpx;
+}
+input{
+  background-color: #F0F0F0;
+  border: 25rpx solid #F0F0F0;
+  width: 95%;
+  font-size: 30rpx;
+}
+.detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.submit{
+  color: white;
+  background-color: #3883FA;
+  margin: 30rpx;
+}
+.upload{
+  height: 180rpx;
+  width: 250rpx;
+  display: table;          /*<设置button中文字居中>*/
+}
+.upload text{               
+  vertical-align:middle;   
+  display: table-cell;      
+}                          /*</设置button中文字居中>*/
+.choImg{
+  display: flex;
+  flex-direction: row;
+  height: 180rpx;
+}
+image{
+  height: 180rpx;
+  width: 150px;
+  margin: 5rpx;
+}
+.location{
+  background-color: #F0F0F0;
+  height: 92.8rpx;
+  width:380rpx;
+  position: relative;
+}
+.Location_but{
+  font-size:30rpx;
+  height:92.8rpx;
+  display: table;  
+}
+.Location_but text{               
+  vertical-align:middle;   
+  display: table-cell;      
+}
+/* .ask{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.all{
+  width: 550rpx;
+  background-color: rgb(114, 206, 248);
+  border-radius: 8rpx;
+  border:1rpx solid blue;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.Y/N{
+  width: 550rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10rpx;
+}
+.text1{
+  font-size: 40rpx;
+  align-items: center;
+  margin: 10rpx;
+}
+.button_whether{
+  width: 150rpx;
+  color: white;
+  background-color: #3883FA;
+}
+.Suc{
+  color: red;
+  font-size: 30rpx;
+} */

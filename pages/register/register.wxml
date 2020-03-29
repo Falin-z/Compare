@@ -1,0 +1,33 @@
+<view class='container'>
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>商家姓名:</text>
+  </view>
+  <input type='text' placeholder='请输入商家姓名'></input>
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>商家信息:</text>
+  </view>
+  <input type='text' placeholder='请输入商家的电话号码'></input>
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>店铺名称:</text>
+  </view>
+  <input type='text' placeholder='请输入店铺名称'></input> 
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>店铺地址:</text>
+  </view>
+  <view class="detail">
+    <input type='text' placeholder='请输入店铺地址' value='{{Loc}}'></input>
+    <view class="location">
+      <button bindtap="getLocation" class="Location_but"><text>查看当前位置</text></button>
+    </view>
+  </view>
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>商品信息:</text>
+  </view>
+  <input type='text' placeholder='请输入商品的信息'></input>
+  <button class='submit' bindtap='complete'>完成注册</button>
+</view>

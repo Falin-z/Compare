@@ -1,0 +1,36 @@
+<view class='container'>
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>店铺名称:</text>
+  </view>
+  <input type='text' placeholder='请输入店铺名称'></input>
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>店铺地址:</text>
+  </view>
+  <view class="detail">
+    <input type='text' placeholder='请输入店铺地址' value="{{Loc}}"></input>
+    <view class="location">
+      <button bindtap="getLocation" class="Location_but"><text>查看当前位置</text></button>
+    </view>
+  </view>
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>商品信息:</text>
+  </view>
+  <input type='text' placeholder='请输入待上传商品的相关信息'></input> 
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>商家信息:</text>
+  </view>
+  <input type='text' placeholder='请输入商家的电话号码'></input>
+  <view class='Bar'>
+    <text class='Red'>*</text>
+    <text>商品图片:</text>
+  </view>
+  <view class="choImg">
+    <image src="{{Img}}"></image>
+    <button class="upload" bindtap="chooseImage"><text>{{word}}</text></button>
+  </view>
+  <button class='submit' bindtap='goToAsk'>马上提交</button>
+</view>

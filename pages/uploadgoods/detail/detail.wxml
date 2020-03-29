@@ -1,0 +1,7 @@
+<view class="NO">
+  <text>您还未成为商家，无法上传商品。请点击“注册”按钮前往注册；或点击“确认”返回原界面。</text>
+  <view class="ans">
+    <button bindtap="register">注册</button>
+    <button bindtap="back">确认</button>
+  </view>
+</view>

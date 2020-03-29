@@ -1,0 +1,64 @@
+<view class="container">
+  <view class="bar">
+    <image class="Sear" src='/images/search.png'></image>
+    <input type='text' placeholder='  请输入关键字搜索' bindtap="Search"></input>
+  </view>
+  <view class="scanner">
+    <image src='/images/scan.png' class="dis" bindtap="chooseImage"></image>
+    <image src='/images/camera.png' class="dis" bindtap="chooseImage"></image>
+  </view>
+    <swiper indicator-dots="true">
+      <swiper-item>
+        <image class="Big" src="/images/bigpic1.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="Big" src="/images/bigpic2.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="Big" src="/images/bigpic3.jpg"></image>
+      </swiper-item>
+    </swiper>
+  <view class="notice">
+    <image class="laba" src="/images/laba.jpg"></image>
+    <button plain='true'>您收藏的某某商品已降价xx元，快去看看吧！</button>
+  </view>
+  <view class="rank">
+    <view class="Ran">
+      <image class="top" src="/images/one.png"></image>
+      <text>好评top榜</text>
+    </view>
+    <view class="Ran">
+      <image class="top" src="/images/two.png"></image>
+      <text>销量top榜</text>
+    </view>
+    <view class="Ran">
+      <image class="top" src="/images/three.png"></image>
+      <text>低价top榜</text>
+    </view>
+    <view class="Ran">
+      <image class="top" src="/images/four.png"></image>
+      <text>折扣top榜</text>
+    </view>
+  </view>
+    <text style="display:flex; justify-content:center; margin:15rpx; font-size:40rpx;">经典款式</text>
+      <view class="Box">
+        <view style="display:flex; flex-direction:column;">
+          <image class="box" src="/images/kobe.jpg"></image>
+          <text style="margin-top:10rpx; margin-bottom:10rpx;">经典球鞋</text>
+        </view>
+        <view style="display:flex; flex-direction:column;">
+          <image class="box" src="/images/conv.jpg"></image>
+          <text style="margin-top:10rpx; margin-bottom:10rpx;">休闲鞋</text>
+        </view>
+      </view>
+      <view class="Box">
+        <view style="display:flex; flex-direction:column;">
+          <image class="box" src="/images/leather.jpg"></image>
+          <text style="margin-top:10rpx; margin-bottom:10rpx;">皮鞋</text>
+        </view>
+        <view style="display:flex; flex-direction:column;">
+          <image class="box" src="/images/child.jpg"></image>
+          <text style="margin-top:10rpx; margin-bottom:10rpx;">童鞋</text>
+        </view>
+      </view>
+</view>

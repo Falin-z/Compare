@@ -1,0 +1,15 @@
+<view class='searchBar'>
+
+  <image src='/images/search.png'></image>
+
+  <form bindsubmit="search">
+    <view class="searchBar">
+      <input type='text' placeholder='请输入关键字搜索' name="keywords"> </input>
+      <button plain='true' form-type="submit" size="mini">搜索</button>
+    </view>
+  </form>
+</view>
+<!-- <view class="btn">
+  <button class="{{_defaultId ==1?'onlineBtn default':'onlineBtn'}}" data-id="1" bindtap="changeBtn"> 网购 </button>
+  <button class="{{_defaultId ==2?'onlineBtn default':'onlineBtn'}}" data-id="2" bindtap="changeBtn"> 实体店 </button>  
+</view>  -->

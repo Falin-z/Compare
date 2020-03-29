@@ -1,0 +1,57 @@
+.btn {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-around;
+}
+
+.realBtn,
+.onlineBtn {
+  line-height     : 1;
+  padding         : 10rpx;
+  margin-top      : 20rpx;
+  width           : 160rpx;
+}
+.default{
+  color:aliceblue;
+  background-color:rgba(230, 101, 54,0.7) ;
+}
+.detail_kinds{
+  display: flex;
+  justify-content: space-around;
+  color: grey;
+}
+.default_kinds{
+  color:palevioletred;
+}
+
+.goods{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  align-items: flex-start;
+  height: 300rpx;
+}
+.goods .name{
+  font-size: 30rpx;
+}
+.goods image{
+  margin-right: 40rpx;
+  /* width: 600rpx; */
+  height: 300rpx;
+}
+
+.goods .info{
+  color:grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.goods .price{
+  color: red;
+  font-size: 40rpx;
+  padding: 10rpx;
+}
+.goods .shop{
+  font-size: 30rpx;
+}

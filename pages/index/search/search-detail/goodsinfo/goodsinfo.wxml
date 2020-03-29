@@ -1,0 +1,24 @@
+<swiper wx:if="{{imgUrls.length>0}}" indicator-dots="{{false}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image class="swiper-image" src="{{item}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="goodsInfo">
+  <view class="link" bindtap="link">商品链接</view>
+  <view class="name">{{goodsInfo.shoesName}}</view>
+  <view style="display:flex">
+    <view class="price">{{"￥"+goodsInfo.price}}</view>
+    <view  wx:if="{{ goodsInfo.coupon!=false}}" class="cheap">
+      <view>{{"优惠券 "}}</view>
+    </view>
+  </view>
+  <view>{{goodsInfo.shopName}}</view>
+</view>
+<view class="otherInfo">
+  <view class="card">{{goodsInfo.shoesKind !=null?goodsInfo.shoesKind:"" + goodsInfo.storeName!=null?goodsInfo.storeName:""}}</view>
+  <view  wx:if="{{goodsInfo.district != null}}" class="card">{{goodsInfo.district}}</view>
+  <view  wx:if="{{goodsInfo.details != null}}" class="card">{{goodsInfo.details}}</view>
+  <view  wx:if="{{goodsInfo.salesInfo != null}}" class="card">{{goodsInfo.salesInfo}}</view>
+</view>

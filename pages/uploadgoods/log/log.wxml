@@ -1,0 +1,8 @@
+<view class="ask">
+  <text>请问您是否已注册成为商家？</text>
+  <view class='Y/N'>
+    <button bindtap="success" class='button_whether'>是</button>
+    <button bindtap="fail" class='button_whether'>否</button>
+  </view>
+</view>
+

@@ -1,0 +1,33 @@
+<view class="detail_kinds"></view>
+<view class="btn">
+  <button class="{{_defaultId ==1?'onlineBtn default':'onlineBtn'}}" data-id="1" bindtap="changeBtn">
+    网购
+  </button>
+  <button class="{{_defaultId ==2?'onlineBtn default':'onlineBtn'}}" data-id="2" bindtap="changeBtn">
+    实体店
+  </button>
+</view>
+<view style="height:20rpx"></view>
+<view class="detail_kinds">
+  <view class="{{_defaultKindId==1? 'default_kinds':''}}" data-id="1" bindtap='changeKind'>智能</view>
+  <view class="{{_defaultKindId == 2?'default_kinds':''}}" data-id="2" bindtap='changeKind'>
+    价格
+  </view>
+  <view class="{{_defaultKindId == 3?'default_kinds':''}}" data-id="3" bindtap='changeKind'>
+    销量
+  </view>
+  <view class="{{_defaultKindId == 4?'default_kinds':''}}" data-id="4" bindtap='changeKind'>
+    筛选
+  </view>
+</view>
+<view class="goods" wx:for="{{goodsList}}" bindtap="goodsInfo" data-id="{{index}}">
+  <image src="{{item.picUrl}}" mode="aspectFill"></image>
+  <view class="info">
+    <view class="name">{{item.shoesName}}</view>
+    <view style="display:flex;justify-content: space-between;color:red;font-size:30rpx">
+      <view class="price">{{"￥"+item.price}}</view>
+      <view >{{item.coupon?"优惠券  ":""}}</view>
+    </view>
+    <view class="shop">{{item.shopName}}</view>
+  </view>
+</view>

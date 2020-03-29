@@ -1,0 +1,47 @@
+/* pages/index/search/search-detail/goodsinfo/goodsinfo.wxss */
+.goodsInfo {
+  padding  : 10rpx;
+  font-size: 30rpx;
+}
+
+.name {
+  color      : silver;
+  font-weight: bolder;
+}
+
+.link {
+  margin-left: 10rpx;
+  padding: 20rpx 0;
+  font-weight:bolder ;
+  /* color: ; */
+  color: pink;
+  text-shadow: slategrey;
+}
+.goodsInfo .price{
+  color: red;
+  font-size: 40rpx;
+  padding: 10rpx;
+}
+.goodsInfo .cheap{
+  color: white;
+  font-size: 20rpx;
+  padding: 10rpx;
+  line-height: 60rpx;
+}
+.cheap view{
+  display: inline;
+  padding: 6rpx;
+  background-color: red;
+}
+.otherInfo{
+  position: absolute;
+  width: 100%;
+  background-color: gainsboro;
+  height: 50%;
+}
+.card{
+  background-color: white;
+  border-radius: 10rpx;
+  margin: 10rpx 0rpx;
+  padding: 20rpx;
+}

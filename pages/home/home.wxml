@@ -1,0 +1,39 @@
+<view class="container" hidden="{{Hidden}}">
+  <view class="top">
+    <image src="{{myhead}}" class="head" bindtap="clickhead"></image>
+    <text class="name">{{myname}}</text>
+  </view>
+  <view class="function">
+    <view class="func" bindtap="jmp_Collect">
+      <image src="/images/collect1.png" class="func_picture"></image>
+      <text class="func_word">我的收藏</text>
+    </view>
+    <view class="func" bindtap="jmp_History">
+      <image src="/images/history1.png" class="func_picture"></image>
+      <text class="func_word">历史记录</text>
+    </view>
+    <view class="func" bindtap="jmp_Message">
+      <image src="/images/message1.png" class="func_picture"></image>
+      <text class="func_word">降价提醒</text>
+    </view>
+  </view>
+  <view class="newmessage">
+    <view class="newmessage_word">
+      <text>最新消息</text>
+    </view>
+    <scroll-view scroll-y='true' style="height:380rpx;">
+      <view wx:for="{{List}}" wx:key="index" wx:for-index="key">
+        <view  class='infomation' data-index='{{key}}'>
+          <image src="{{item.img}}" class="info_picture"></image>
+          <view class="info_content">
+            <text>{{item.title}}</text>
+            <button class="info_button" size="mini" open-type="getUserInfo" bindgetuserinfo="getinfo">{{item.click}}</button>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<view class="bigHead" hidden="{{hidden}}">
+  <image src="{{myhead}}" class="bigHead_pic" bindtap="clickBighead"></image>
+</view>

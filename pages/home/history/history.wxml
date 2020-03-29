@@ -1,0 +1,58 @@
+<view class="container">
+  <view class="title">
+    <view><button class="title_button" bindtap="toCollect">我的收藏</button></view>
+    <view class="line"><button class="title_button" style="color:red;">历史记录</button></view>
+    <view><button class="title_button" bindtap="toMessage">降价提醒</button></view>
+  </view>
+  <view class="notes">
+    <view class="notes_left">
+      <text>共</text>
+      <text class="notes_num">{{num}}</text>
+      <text>条，最多为您保存30条</text>
+    </view>
+    <view class="notes_right">
+      <button class="notes_right_button" bindtap="clickEdite" hidden="{{!hidden}}">编辑</button>
+      <button class="notes_right_button" bindtap="clickRight" hidden="{{hidden}}">确定</button>
+    </view>
+  </view>
+  <view class="product_list">
+    <view wx:for="{{List}}" wx:key="index" wx:for-index="key" wx:if='{{List[key].concel_project}}'>
+      <view  class='product'>
+        <icon wx:if='{{List[key].collect}}' hidden="{{hidden}}" type="success" size="20" class="Icon" data-index='{{key}}' bindtap="clickIcon"></icon>
+        <icon wx:else type="circle" hidden="{{hidden}}" size="20" class="Icon" data-index='{{key}}' bindtap="clickIcon"></icon>
+        <image src="{{item.img}}" class="product_img"></image>
+        <view class="product_content">
+          <view style="height:180rpx; display:flex; flex-direction:column;">
+            <text>{{item.title}}</text>
+            <text class="content">颜色：{{item.color}}  尺寸：{{item.size}}</text>
+          </view>
+          <view style="color:red; display:flex; flex-direction:row; align-items:center;">
+            <view class="sign"><text>¥</text></view>
+            <text class="price">{{item.price}}</text>
+          </view>
+        </view>
+      </view>
+      <view style="height:10rpx; background-color:#F0F0F0;"></view>
+    </view>
+  </view>
+  <view class="concelCollect" hidden="{{hidden}}">
+    <view class="concel_left">
+      <icon wx:if='{{allcollect}}' type="success" size="20" class="Icon" bindtap="clickAllicon"></icon>
+      <icon wx:else type="circle"size="20" class="Icon" bindtap="clickAllicon"></icon>
+      <text class="concel_word">全选</text>
+    </view>
+    <view class="concel_right">
+      <button class="concel_button" bindtap="concel_collect">删除记录</button>
+    </view>
+  </view>
+  <cover-view wx:if="{{concel_collect}}" class='mask'>
+    <cover-view class="modal">
+      <cover-image src="/images/warn.png" class="concel_img"></cover-image>
+      <cover-view class='content'>确定删除这些记录么？</cover-view>
+      <cover-view class="concel_collect_button">
+        <button class='yes_no' bindtap="delete_collect">确定删除</button>
+        <button class="yes_no" bindtap="consider">再想想</button>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+</view>
